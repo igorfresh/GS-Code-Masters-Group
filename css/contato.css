@@ -17,6 +17,30 @@
 }
 
 
+
+.navbar {
+    display: flex;
+    width: 100%;
+    background-color: #A6D13B;
+    height: 100px;
+    align-items: center;
+}
+
+
+.navbar ul {
+    list-style: none;
+}
+
+.navbar ul li{
+    display: inline;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    gap: 10px;
+}
 @media (max-width:425px) {
     
 }
