@@ -19,8 +19,10 @@ body{
 
 }
 
+
 .inicio img{
-    max-width: 100vw;
+    width: 100%;
+
 }
 .presentationAgroSus {
     background-color: rgb(12, 159, 88);
