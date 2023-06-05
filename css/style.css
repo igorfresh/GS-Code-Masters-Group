@@ -2,13 +2,14 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    text-decoration: none;
 }
 
-body{
-    background-color: #18181b;
-}
 :root {
-/*--color-brand-primary:#A6D13B; */
+--color-brand-primary:#ffff;
+--color-brand-secundary: #A6D13B;
+--color-shadow: rgba(0, 0, 0, 0.5);
+--color-dark: #111111;
 
 --spacing-xsmall: 4px;
 --spacing-small: 8px;
@@ -17,45 +18,18 @@ body{
 --spacing-large: 32px;
 --spacing-xlarge: 40px;
 
-}
-
-
-.inicio img{
-    width: 100%;
-
-}
-.presentationAgroSus {
-    background-color: rgb(12, 159, 88);
-    height: 500px;
-    display: flex;
-    align-items: center;
-} 
-
-.presentationAgroSus img {
-    max-height:70%;
+--font-medium: 500;
+--font-semibold: 600;
+--font-bold: 700;
 
 }
 
-.presentationIAgen {
-    height: 500px;
-    background-color: blueviolet;
-    display: flex;
-    align-items: center;
+html{
+    font-size: var(--spacing-default);
 }
 
-.presentationIAgen img{
-    max-height: 80%;
-}
-
-.presentationModCult {
-height: 500px;
-background-color: brown;
-display: flex;
-align-items: center;
-}
-
-.presentationModCult img{
-    max-height: 80%;
+body{
+    font-family: 'Montserrat', 'Open Sans', Arial, Helvetica, sans-serif;
 }
 
 @media (max-width:425px) {
