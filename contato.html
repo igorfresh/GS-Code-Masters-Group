@@ -41,55 +41,79 @@
 
     <main>
         <form>
+            <div class="introducao-paginas">
+                <h2 class="subtitle">Contato</h2>
+                <span class="description">
+                    Preencha os campos abaixo
+                </span>
+            </div>
             <div class="contato">
-                <label for="nome">Digite seu nome: </label>
-                <input type="text" name="recebeNome" id="nome">
+                <div class="col-1">
+                    <label for="nome">Digite seu nome: </label>
+                    <input type="text" name="recebeNome" id="nome">
 
-                <label for="sobrenome">Digite seu sobrenome: </label>
-                <input type="text" name="recebeSobrenome" id="sobrenome">
+                    <label for="sobrenome">Digite seu sobrenome: </label>
+                    <input type="text" name="recebeSobrenome" id="sobrenome">
 
-                <label for="email">Digite seu email: </label>
-                <input type="email" name="recebeEmail" id="email">
+                    <label for="email">Digite seu email: </label>
+                    <input type="email" name="recebeEmail" id="email">
 
-                <label for="telefone">Digite seu telefone: </label>
-                <input type="tel" name="recebeTelefone" id="telefone">
+                    <label for="telefone">Digite seu telefone: </label>
+                    <input type="tel" name="recebeTelefone" id="telefone">
 
-                <label for="sexo">Selecione seu sexo: </label>
-                <select name="recebeSexo" id="sexo">
-                    <option value=""></option>
-                    <option value="masculino">Masculino</option>
-                    <option value="feminino">Feminino</option>
-                    <option value="neutro">Outro</option>
-                </select>
+                    <label for="sexo">Selecione seu sexo: </label>
+                    <select name="recebeSexo" id="sexo">
+                        <option value=""></option>
+                        <option value="masculino">Masculino</option>
+                        <option value="feminino">Feminino</option>
+                        <option value="neutro">Outro</option>
+                    </select>
 
-                <label for="assunto">Digite o assunto: </label>
-                <input type="text" name="recebeAssunto" id="assunto">
+                    <label for="assunto">Digite o assunto: </label>
+                    <input type="text" name="recebeAssunto" id="assunto">
+                
+                    <label for="mensagem">Digite a mensagem: </label>
+                    <textarea name="recebeMensagem" id="mensagem"></textarea>
+                </div>
+                
+                <div class="col-2">
+                    <label for="spcia">Você utilizou o SPCIA?</label>
+                    <div class="radio-group">
+                        <label for="sim">
+                            <input type="radio" name="recebeSPCIA" id="sim" value="sim">Sim
+                        </label>
+                        <label for="nao">
+                            <input type="radio" name="recebeSPCIA" id="nao" value="nao">Não
+                        </label>
+                    </div>
 
-                <label for="mensagem">Digite a mensagem: </label>
+                    <label for="termos">Ao enviar a mensagem, você concorda com os termos?</label>
+                    <div class="radio-group">
+                        <label for="concordo">
+                            <input type="radio" name="recebeTermos" id="concordo" value="concordo">Sim
+                        </label>
+                        <label for="nao-concordo">
+                            <input type="radio" name="recebeTermos" id="nao-concordo" value="nao-concordo">Não
+                        </label>
+                    </div>
+                    
+                    <label for="endereco">Digite seu endereço: </label>
+                    <input type="text" name="recebeEndereco" id="endereco">
 
-                <textarea name="recebeMensagem" id="mensagem"></textarea>
-                <label for="spcia">Você utilizou o SPCIA? </label>
-                <input type="checkbox" name="recebeSPCIA" id="spcia">
+                    <label for="estadocivil">Selecione seu estado civil: </label>
+                    <select name="recebeEstadoCivil" id="estadocivil">
+                        <option value=""></option>
+                        <option value="solteiro">Solteiro</option>
+                        <option value="casado">Casado</option>
+                        <option value="divorciado">Divorciado</option>
+                        <option value="viuvo">Viúvo</option>
+                    </select>
 
-                <label for="termos">Ao enviar a mensagem, você concorda com os termos?</label>
-                <input type="checkbox" name="recebeTermos" id="termos">
+                    <label for="datanascimento">Digite sua data de nascimento: </label>
+                    <input type="date" name="recebeDataNascimento" id="datanascimento">
 
-                <label for="endereco">Digite seu endereço: </label>
-                <input type="text" name="recebeEndereco" id="endereco">
-
-                <label for="estadocivil">Selecione seu estado civil: </label>
-                <select name="recebeEstadoCivil" id="estadocivil">
-                    <option value=""></option>
-                    <option value="solteiro">Solteiro</option>
-                    <option value="casado">Casado</option>
-                    <option value="divorciado">Divorciado</option>
-                    <option value="viuvo">Viúvo</option>
-                </select>
-
-                <label for="datanascimento">Digite sua data de nascimento: </label>
-                <input type="date" name="recebeDataNascimento" id="datanascimento">
-
-                <input type="submit" value="Enviar">
+                    <input type="submit" value="Enviar">
+                </div>
             </div>
         </form>
     </main>
@@ -107,27 +131,3 @@
     <script src="js/script.js"></script>
 </body>
 </html>
-
-
-
-
-
-<!--
-    1 - Nome - text
-    2 - Sobrenome - text
-    3 - Email - email
-    4 - Telefone - tel
-    5 - Sexo - radio
-    6 - Assunto - text
-    7 - Mensagem - text
-    8 - Voce utilizou o SPCIA? - checkbox
-    9 - Ao enviar a mensagem, voce concorda com os termos bla bla bla - radio
-    10 - Endereço - text
-    11 - Estado civil - select
-    12 - Data nascimento - date
-    10 -  Enviar - submit
-
-
-
-
--->
