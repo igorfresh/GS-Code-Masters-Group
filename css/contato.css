@@ -16,31 +16,71 @@
 
 }
 
-
-
-.navbar {
-    display: flex;
+.contato {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contato label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .contato input,
+  .contato textarea,
+  .contato select {
     width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .contato input[type="submit"] {
     background-color: #A6D13B;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .contato input[type="submit"]:hover {
+    background-color: #7ba532;
+  }
+  
+  .contato textarea {
+    resize: vertical;
     height: 100px;
-    align-items: center;
-}
+  }
+  
+  .contato input[type="checkbox"] {
+    margin-top: 10px;
+    margin-right: 5px;
+  }
+  
+  .contato select {
+    margin-bottom: 15px;
+  }
+  
+  .contato label[for="termos"] {
+    display: inline-block;
+    margin-bottom: 0;
+    margin-right: 5px;
+  }
+  
+  .contato label[for="termos"],
+  .contato label[for="spcia"] {
+    font-weight: normal;
+  }
+  
+  .contato input[type="radio"],
+  .contato input[type="checkbox"] {
+    vertical-align: middle;
+  }
 
-
-.navbar ul {
-    list-style: none;
-}
-
-.navbar ul li{
-    display: inline;
-}
-
-form{
-    display: flex;
-    flex-direction: column;
-    width: 30%;
-    gap: 10px;
-}
 @media (max-width:425px) {
     
 }

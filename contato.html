@@ -1,104 +1,116 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato - SPCIA</title>
+    <title>Contato</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="css/contato.css">
-    <!--LINK DO GOOGLE FONTS-->
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <div class="container">
-    <nav class="navbar">
-        <p>Sistema de Prevenção e Combate à Insegurança Alimentar (SPCIA)</p>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="agriculturaSustentavel.html">Agricultura Sustentável</a></li>
-            <li><a href="IAgenerativa.html">IA's Generativas</a></li>
-            <li><a href="modeloCultivo.html">Modelos de cultivos eficientes</a></li>
-            <li><a href="contato.html">Contato</a></li>
-        </ul>
-    </nav>
+    <header>
+        <div class="container">
+            <img src="img/imgHeader.jpg" alt="">
+            <nav id="navigator">
+                <a class="logo" href="/">SPCIA</a>
+                <div id="menu">
+                    <ul class="menu">
+                        <li class="menu-item"><a href="index.html">Home</a></li>
+                        <li class="menu-item"><a href="agriculturaSustentavel.html">Agricultura Sustentável</a></li>
+                        <li class="menu-item"><a href="IAgenerativa.html">IA's Generativas</a></li>
+                        <li class="menu-item"><a href="modeloCultivo.html">Modelos de cultivos eficientes</a></li>
+                        <li class="menu-item"><a href="contato.html">Contato</a></li>
+                    </ul>
+                    <span class="menu-button material-symbols-outlined">
+                        menu
+                    </span>
+                </div>
+            </nav>
+            <div class="titulo">
+                <h1>Ficou com alguma dúvida? Entre em contato</h1>
+            </div>
+        </div>
+    </header>
 
-    <h1>Contate-nos</h1>
+    <main>
+        <form>
+            <div class="contato">
+                <label for="nome">Digite seu nome: </label>
+                <input type="text" name="recebeNome" id="nome">
 
-    <form>
-        <label for="name">Nome</label>
-        <input type="text" name="" id="">
-        <label for="secondName">Sobrenome</label>
-        <input type="text" name="" id="">
-        <label for="tel">Telefone</label>
-        <input type="tel" name="" id="">
-        <label for="SPCIA">Voce utilizou o SPCIA?</label>
-        <input type="checkbox" name="" id="">
-        <label for="adress">Endereço</label>
-        <input type="text" name="" id="">
-        <label for="message">Mensagem</label>
-        <input type="text" name="" id="">
-        <label for="birth">Data de Nascimento</label>
-        <input type="date" name="" id="">
-        <label for="uf">UF</label>
-        <select id="estado" name="estado">
-            <option value="AC">Acre</option>
-            <option value="AL">Alagoas</option>
-            <option value="AP">Amapá</option>
-            <option value="AM">Amazonas</option>
-            <option value="BA">Bahia</option>
-            <option value="CE">Ceará</option>
-            <option value="DF">Distrito Federal</option>
-            <option value="ES">Espírito Santo</option>
-            <option value="GO">Goiás</option>
-            <option value="MA">Maranhão</option>
-            <option value="MT">Mato Grosso</option>
-            <option value="MS">Mato Grosso do Sul</option>
-            <option value="MG">Minas Gerais</option>
-            <option value="PA">Pará</option>
-            <option value="PB">Paraíba</option>
-            <option value="PR">Paraná</option>
-            <option value="PE">Pernambuco</option>
-            <option value="PI">Piauí</option>
-            <option value="RJ">Rio de Janeiro</option>
-            <option value="RN">Rio Grande do Norte</option>
-            <option value="RS">Rio Grande do Sul</option>
-            <option value="RO">Rondônia</option>
-            <option value="RR">Roraima</option>
-            <option value="SC">Santa Catarina</option>
-            <option value="SP">São Paulo</option>
-            <option value="SE">Sergipe</option>
-            <option value="TO">Tocantins</option>
-            <option value="EX">Estrangeiro</option>
-        </select>
-        <label for="CEP">CEP:</label>
-        <input type="text" name="" id=""placeholder="00000-000">
-        <!--<label for="terms">Ao enviar esta mensagem você declara que leu os termos de uso e bla bla bla</label>
-        input:che
-        -->
-        <label for="">Genero</label>
-        Masculino
-        <input type="radio" name="gen" id="" value="masc">
-        Feminino
-        <input type="radio" name="gen" id="" value="fem">
-        Outro
-        <input type="radio" name="gen" id="" value="none">
-    </form>
-    <footer class="rodapé">
-        <ul>
-            <li>Gustavo René RM: </li>
-            <li>Igor Miguel Silva RM:99495</li>
-            <li>João Pedro Feitosa RM:</li>
-            <li>Kaue Santana RM: </li>
-            <li>Vinicius Rodrigues RM: 550408 </li>
-        </ul>
+                <label for="sobrenome">Digite seu sobrenome: </label>
+                <input type="text" name="recebeSobrenome" id="sobrenome">
+
+                <label for="email">Digite seu email: </label>
+                <input type="email" name="recebeEmail" id="email">
+
+                <label for="telefone">Digite seu telefone: </label>
+                <input type="tel" name="recebeTelefone" id="telefone">
+
+                <label for="sexo">Selecione seu sexo: </label>
+                <select name="recebeSexo" id="sexo">
+                    <option value=""></option>
+                    <option value="masculino">Masculino</option>
+                    <option value="feminino">Feminino</option>
+                    <option value="neutro">Outro</option>
+                </select>
+
+                <label for="assunto">Digite o assunto: </label>
+                <input type="text" name="recebeAssunto" id="assunto">
+
+                <label for="mensagem">Digite a mensagem: </label>
+
+                <textarea name="recebeMensagem" id="mensagem"></textarea>
+                <label for="spcia">Você utilizou o SPCIA? </label>
+                <input type="checkbox" name="recebeSPCIA" id="spcia">
+
+                <label for="termos">Ao enviar a mensagem, você concorda com os termos?</label>
+                <input type="checkbox" name="recebeTermos" id="termos">
+
+                <label for="endereco">Digite seu endereço: </label>
+                <input type="text" name="recebeEndereco" id="endereco">
+
+                <label for="estadocivil">Selecione seu estado civil: </label>
+                <select name="recebeEstadoCivil" id="estadocivil">
+                    <option value=""></option>
+                    <option value="solteiro">Solteiro</option>
+                    <option value="casado">Casado</option>
+                    <option value="divorciado">Divorciado</option>
+                    <option value="viuvo">Viúvo</option>
+                </select>
+
+                <label for="datanascimento">Digite sua data de nascimento: </label>
+                <input type="date" name="recebeDataNascimento" id="datanascimento">
+
+                <input type="submit" value="Enviar">
+            </div>
+        </form>
+    </main>
+
+
+    <footer class="rodape">
+        <div class="rodape-texto">
+            <h4>Gustavo René RM: 551288</h4>
+            <h4>Igor Miguel Silva RM: 99495</h4>
+            <h4>João Pedro Feitosa RM: 98442</h4>
+            <h4>Kaue Santana RM: 551732</h4>
+            <h4>Vinicius Rodrigues RM: 550408 </h4>
+        </div>
     </footer>
-</div>
-    
-    
+    <script src="js/script.js"></script>
 </body>
 </html>
+
+
+
+
 
 <!--
     1 - Nome - text
@@ -113,7 +125,7 @@
     10 - Endereço - text
     11 - Estado civil - select
     12 - Data nascimento - date
-    13 -  Enviar - submit
+    10 -  Enviar - submit
 
 
 
