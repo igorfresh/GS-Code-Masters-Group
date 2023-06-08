@@ -176,8 +176,7 @@ h1{
     img{
         max-width: 100%;
         object-fit: cover;
-        height: 65vh;
-        filter: blur(0.7px) brightness(60%);
+        height: 65vh;;
     }
 
     #navigator {
@@ -229,12 +228,11 @@ h1{
     }
 }
 
-@media (min-width:426px) and (max-width: 768px) {
+@media (min-width:425px) and (max-width: 768px) {
     img{
         max-width: 100%;
         object-fit: cover;
-        height: 70vh;
-        filter: blur(0.7px) brightness(60%);
+        height: 70vh;;
     }
 
     #navigator {
@@ -325,8 +323,8 @@ h1{
     img{
         height: 70vh;
         object-fit: cover;
-        filter: blur(0.7px) brightness(60%);
     }
+
 
     .titulo{
         display: flex;
